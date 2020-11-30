@@ -44,3 +44,9 @@
   background-color: 18px;
   border-radius: 999px;
 }
+
+.sidebar > hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #49274b;
+}
