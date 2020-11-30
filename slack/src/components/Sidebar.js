@@ -53,11 +53,11 @@ function Sidebar() {
       <SidebarOption Icon={ExpandLess} title='Show less' />
       <hr />
       <SidebarOption Icon={ExpandMore} title='Channels' />
-      <SidebarOption Icon={Add} title='Add Channel' addChannelOptions='' />
+      <SidebarOption Icon={Add} title='Add Channel' addChannelOption={true} />
       {/* connect to database get all the channels */}
       <hr />
       {channels.map((channel) => (
-        <SidebarOption Icon={Add} title={channel.name} />
+        <SidebarOption Icon={Add} id={channel.id} title={channel.name} />
       ))}
     </div>
   );
